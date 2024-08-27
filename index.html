@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            width: 100%;
+            height: 200px; /* Ajusta la altura según sea necesario */
+            overflow: hidden;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Asegura que la imagen cubra todo el espacio del header */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        main {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+            text-align: center;
+        }
+        .product p {
+            margin-top: 10px;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+    </header>
+    <div class="container">
+        <main>
+            <h1>Productos</h1>
+            <div class="products">
+                <div class="product">
+                    <img src="images/product1.jpg" alt="Producto 1">
+                    <p>Descripción del Producto 1</p>
+                </div>
+                <div class="product">
+                    <img src="images/product2.jpg" alt="Producto 2">
+                    <p>Descripción del Producto 2</p>
+                </div>
+                <!-- Añade más productos aquí -->
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mi Página Web</p>
+    </footer>
+</body>
+</html>
